@@ -5,6 +5,11 @@
 
     <dist:module dist:instant="true" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,21 +17,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="landscape"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GamePadActivity" />
-        <activity android:name=".DriveModeActivity" />
-        <activity android:name=".LearningModeActivity" />
-        <activity android:name=".CustomPlayMode" />
-        <activity android:name=".EasyModeActivity" />
+        <activity android:name=".GamePadActivity"
+            android:screenOrientation="landscape">
+
+
+
+        </activity>
+        <activity android:name=".DriveModeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".LearningModeActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".CustomPlayMode"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".EasyModeActivity"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+
+            >
         </activity>
     </application>
 

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Battle Bots</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="right"><![CDATA[>]]></string>
+    <string name="down">v</string>
+    <string name="up">^</string>
 </resources>
